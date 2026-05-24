@@ -1,0 +1,16 @@
+{
+  "short_name": "FLUXO",
+  "name": "FLUXO Weather App",
+  "icons": [
+    {
+      "src": "fluxo-logo.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#FF5722",
+  "background_color": "#ffffff"
+}

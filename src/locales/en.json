@@ -1,0 +1,105 @@
+{
+  "languages": {
+    "title": "Language",
+    "ar": "العربية",
+    "en": "English"
+  },
+  "about": {
+    "title": "About Application",
+    "description": "A reliable weather application providing accurate and direct data for your location around the clock.",
+    "dataSource": "Data Provider",
+    "techStack": "Development Technologies",
+    "developer": "Developed By",
+    "devName": "Mahmoud Ghanem",
+    "closeBtn": "Close"
+  },
+  "popularCities": {
+    "quickAccess": "Quick Access",
+    "title": "Popular Cities",
+    "cities": {
+      "Damascus": "Damascus",
+      "Dubai": "Dubai",
+      "Paris": "Paris",
+      "New York": "New York",
+      "London": "London"
+    }
+  },
+  "weatherTips": {
+    "mainTitle": "Weather Tips",
+    "subTitle": "Daily Guide",
+    "items": {
+      "hydration": {
+        "title": "Body Hydration",
+        "content": "The weather is hot today. Make sure to drink plenty of water to stay healthy and active."
+      },
+      "visibility": {
+        "title": "Safe Driving",
+        "content": "Visibility may be low due to fog or dust. Please drive carefully and keep a safe distance from other cars."
+      },
+      "devices": {
+        "title": "Device Safety",
+        "content": "High temperatures can affect your laptop and phone. Keep them in a cool, ventilated place."
+      },
+      "productivity": {
+        "title": "Focus & Work",
+        "content": "The current calm atmosphere is perfect for working or studying. A great time to get things done!"
+      }
+    }
+  },
+  "search": {
+    "placeholder": "Search",
+    "locateMe": "Locate Me"
+  },
+  "sidebar": {
+    "closeMenu": "Close Menu",
+    "unitSystem": "Unit System",
+    "theme": "Theme",
+    "locateMe": "Locate Me",
+    "about": "About",
+    "metric": "Metric",
+    "imperial": "Imperial",
+    "dark": "Dark",
+    "light": "Light",
+    "contact": "Contact Info:"
+  },
+  "navbar": {
+    "menu": "Menu",
+    "locateMe": "Locate Me",
+    "dark": "Dark",
+    "light": "Light"
+  },
+  "weatherDisplay": {
+    "liveReport": "Live Report",
+    "currentStatus": "Current Weather Status",
+    "extendedForecast": "Extended Forecast",
+    "nextDays": "Next 5 Days",
+    "findCity": "Find City",
+    "findAnotherCity": "Find another city",
+    "humidity": "Humidity",
+    "pressure": "Pressure",
+    "wind": "Wind",
+    "maxTemp": "Max Temp",
+    "windUnitMetric": " m/s",
+    "windUnitImperial": " mph",
+    "pressureUnit": "hPa",
+    "lastUpdated": "Last updated"
+  },
+  "footer": {
+    "rights": "All rights reserved.",
+    "credits": "Designed & Developed by Mahmoud Ghanem",
+    "techTag": "Built with: React & Material UI"
+  },
+  "weatherLoader": {
+    "text": "Loading weather data"
+  },
+  "errors": {
+    "network": "Network error. Please check your internet connection!",
+    "serverError": "Weather server is not responding right now.",
+    "locationDenied": "Location permission denied. Please enable it from browser settings.",
+    "locationUnavailable": "Location unavailable. Please make sure GPS is turned on and try again.",
+    "notSupported": "Geolocation is not supported by your browser."
+  },
+  "success": {
+    "successFetch": "Weather data fetched successfully!"
+  }
+}
