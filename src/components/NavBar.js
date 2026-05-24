@@ -46,7 +46,7 @@ export default function NavBar() {
         }}
         elevation={0}
       >
-        <Toolbar>
+        <Toolbar sx={{ py: 1 }}>
           <IconButton
             size="large"
             edge="start"
