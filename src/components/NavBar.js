@@ -41,6 +41,7 @@ export default function NavBar() {
         sx={{
           backgroundColor: alpha(theme.palette.primary.main, 0.8),
           color: theme.palette.secondary.main,
+          borderBottom: `2px solid ${theme.palette.secondary.main}`,
           borderRadius: "0 0 20px 20px",
         }}
         elevation={0}
@@ -160,6 +161,8 @@ export default function NavBar() {
                     severity: "error",
                     message: t(error),
                   });
+                } finally {
+                  setLoading(false);
                 }
               }}
             >

@@ -77,6 +77,8 @@ export default function WeatherSidebar() {
         severity: "error",
         message: t(error),
       });
+    } finally {
+      setLoading(false);
     }
   };
 

@@ -183,6 +183,8 @@ export default function Search() {
                 severity: "error",
                 message: t(error),
               });
+            } finally {
+              setLoading(false);
             }
           } else {
             setSelectedCity(newValue);

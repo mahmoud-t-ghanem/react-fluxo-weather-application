@@ -51,10 +51,26 @@ export default function AppContent() {
               display: "flex",
               flexDirection: "column",
               alignItems: "center",
+              "@media (max-width: 500px)": {
+                paddingLeft: "0px",
+                paddingRight: "0px",
+              },
+            }}
+          >
+            <NavBar />
+          </Container>
+
+          <Container
+            maxWidth="lg"
+            sx={{
+              position: "relative",
+              zIndex: 2,
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "center",
             }}
           >
             <WeatherNotification />
-            <NavBar />
             <Search />
             <PopularCities />
           </Container>
