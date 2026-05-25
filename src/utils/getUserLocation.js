@@ -18,17 +18,17 @@ export const getUserLocation = () => {
         });
       },
       (error) => {
-        let errorKey = "errors.locationUnavailable";
+        let errorKey = "errors.network";
 
         switch (error.code) {
           case 1:
+          case 2:
             errorKey = "errors.locationDenied";
             break;
           case 3:
+          default:
             errorKey = "errors.network";
             break;
-          default:
-            errorKey = "errors.locationUnavailable";
         }
 
         reject(errorKey);

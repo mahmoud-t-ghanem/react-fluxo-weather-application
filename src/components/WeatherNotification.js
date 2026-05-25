@@ -10,7 +10,7 @@ export default function WeatherNotification() {
   const { i18n } = useTranslation();
 
   const handleCloseNotification = () => {
-    setWeatherNotification({ open: true, message: "", severity: "" });
+    setWeatherNotification({ open: false, message: "", severity: "" });
   };
   return (
     <Snackbar
@@ -23,6 +23,8 @@ export default function WeatherNotification() {
         variant="filled"
         severity={weatherNotification.severity}
         sx={{
+          display: "flex",
+          alignItems: "center",
           color: grey[200],
           width: { xs: "80vw", md: "100%" },
           "& .MuiAlert-icon": {

@@ -95,9 +95,8 @@
   "errors": {
     "network": "Network error. Please check your internet connection!",
     "serverError": "Weather server is not responding right now.",
-    "locationDenied": "Location permission denied. Please enable it from browser settings.",
-    "locationUnavailable": "Location unavailable. Please make sure GPS is turned on and try again.",
-    "notSupported": "Geolocation is not supported by your browser."
+    "locationDenied": "Location access denied. Please enable location services on your device or grant browser permission.",
+    "notSupported": "Your current browser does not support location features."
   },
   "success": {
     "successFetch": "Weather data fetched successfully!"

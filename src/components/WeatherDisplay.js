@@ -247,6 +247,7 @@ export default function WeatherDisplay() {
                 sx={{
                   wordBreak: "break-word",
                   textAlign: "center",
+                  mb: { xs: 2, md: 3 },
                 }}
               >
                 <Box>
@@ -274,18 +275,6 @@ export default function WeatherDisplay() {
                     }}
                   >
                     {weatherData.weather[0].description}
-                  </Typography>
-                  <Typography
-                    variant="body2"
-                    sx={{
-                      color: theme.palette.text.main,
-                      fontSize: { xs: "0.8rem", md: "0.95rem" },
-                      fontWeight: 500,
-                      mt: 1,
-                      opacity: 0.8,
-                    }}
-                  >
-                    {t("weatherDisplay.lastUpdated")}: {formattedDateTime}
                   </Typography>
                 </Box>
 
@@ -323,6 +312,7 @@ export default function WeatherDisplay() {
                       color: theme.palette.text.main,
                       display: "flex",
                       alignItems: "flex-start",
+                      margin: "0px !important",
                     }}
                   >
                     {Math.round(weatherData.main.temp)}
@@ -339,9 +329,24 @@ export default function WeatherDisplay() {
                 </Stack>
               </Box>
 
+              <Box sx={{ textAlign: "center" }}>
+                <Typography
+                  variant="body2"
+                  sx={{
+                    color: theme.palette.text.main,
+                    fontSize: { xs: "0.8rem", md: "0.95rem" },
+                    fontWeight: 500,
+                    opacity: 0.8,
+                  }}
+                >
+                  {t("weatherDisplay.lastUpdated")}: {formattedDateTime}
+                </Typography>
+              </Box>
+
               <Divider
                 sx={{
-                  my: { xs: 3, md: 4 },
+                  mb: { xs: 2, md: 3 },
+                  mt: { xs: 1, md: 2 },
                   borderColor: `${theme.palette.secondary.main}22`,
                 }}
               />
