@@ -46,7 +46,7 @@ export default function NavBar() {
         }}
         elevation={0}
       >
-        <Toolbar sx={{ py: 1 }}>
+        <Toolbar sx={{ py: 1, "& .MuiSvgIcon-root": { fontSize: "1.6rem" } }}>
           <IconButton
             size="large"
             edge="start"
@@ -66,6 +66,7 @@ export default function NavBar() {
             variant="h5"
             component="div"
             sx={{
+              fontSize: "1.7rem",
               flexGrow: 1,
               fontWeight: 900,
               letterSpacing: "5px",
