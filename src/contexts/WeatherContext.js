@@ -19,7 +19,7 @@ export function WeatherProvider({ children }) {
   const [sidebarVisible, setSidebarVisible] = useState(false);
   const [units, setUnits] = useState("metric");
   const [openAbout, setOpenAbout] = useState(false);
-  const [mode, setMode] = useState("light");
+  const [mode, setMode] = useState("dark");
   const [loading, setLoading] = useState(false);
   const searchInputRef = useRef(null);
   const resultsSectionRef = useRef(null);
