@@ -38,22 +38,31 @@ export function useWeather() {
           if (currentRes.data) {
             setWeatherData(currentRes.data);
           }
+
           if (forecastRes.data) {
             const todayString = new Date().toISOString().split("T")[0];
-            const dailyForecast = forecastRes.data.list.filter((reading) => {
+            const groups = {};
+            forecastRes.data.list.forEach((reading) => {
               const dateString = reading.dt_txt.split(" ")[0];
-              return (
-                dateString !== todayString &&
-                reading.dt_txt.includes("12:00:00")
-              );
+              if (dateString !== todayString) {
+                if (!groups[dateString]) {
+                  groups[dateString] = [];
+                }
+                groups[dateString].push(reading);
+              }
             });
-            setForecastData(dailyForecast);
-            console.log("Filtered 5 Days Forecast (Noon):", dailyForecast);
+            const dailyForecast = Object.values(groups).map((dayReadings) => {
+              const midIndex = Math.floor(dayReadings.length / 2);
+              return dayReadings[midIndex];
+            });
+            const finalForecast = dailyForecast
+              .sort((a, b) => a.dt - b.dt)
+              .slice(0, 5);
+            setForecastData(finalForecast);
           }
 
           if (currentRes.data && forecastRes.data) {
             scrollToResults();
-
             setWeatherNotification({
               open: true,
               severity: "success",

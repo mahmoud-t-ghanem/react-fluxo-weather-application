@@ -18,6 +18,7 @@ export default function WeatherNotification() {
       open={weatherNotification.open}
       autoHideDuration={4000}
       onClose={handleCloseNotification}
+      sx={{ width: "fit-content" }}
     >
       <Alert
         variant="filled"
@@ -26,7 +27,7 @@ export default function WeatherNotification() {
           display: "flex",
           alignItems: "center",
           color: grey[200],
-          width: { xs: "80vw", md: "100%" },
+          width: "100%",
           "& .MuiAlert-icon": {
             marginRight: "0px",
             marginInlineEnd: "7px",

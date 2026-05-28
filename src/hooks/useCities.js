@@ -18,8 +18,6 @@ export function useCities(inputValue) {
           setSearchLoading(true);
           const URL = `https://secure.geonames.org/searchJSON?name_startsWith=${encodeURIComponent(inputValue)}&featureClass=P&cities=cities1000&orderby=population&maxRows=50&lang=${LANG}&username=${USERNAME}`;
           const response = await axios.get(URL);
-
-          console.log(response);
           if (response.data.geonames && response.data.geonames.length > 0) {
             setOptions(response.data.geonames);
           }
