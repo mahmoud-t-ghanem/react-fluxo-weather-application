@@ -370,8 +370,6 @@ export default function WeatherSidebar() {
           "& .MuiPaper-root": {
             backgroundColor: theme.palette.primary.main,
             backgroundImage: "none",
-            height: "100vh",
-            maxHeight: "100vh",
           },
         }}
       >
