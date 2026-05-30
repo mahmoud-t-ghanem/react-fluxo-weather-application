@@ -549,7 +549,7 @@ export default function WeatherDisplay() {
                         {new Date(day.dt * 1000).toLocaleDateString(
                           i18n.language,
                           {
-                            weekday: "short",
+                            weekday: "long",
                           },
                         )}
                       </Typography>

@@ -181,6 +181,7 @@ export default function WeatherSidebar() {
                 />
                 {item.id === "unit-toggle" && (
                   <FormControlLabel
+                    sx={{ margin: "0px" }}
                     control={
                       <Switch
                         checked={units === "imperial"}
@@ -212,6 +213,7 @@ export default function WeatherSidebar() {
 
                 {item.id === "theme-toggle" && (
                   <FormControlLabel
+                    sx={{ margin: "0px" }}
                     control={
                       <Switch
                         checked={mode === "dark"}
@@ -240,6 +242,7 @@ export default function WeatherSidebar() {
                 )}
                 {item.id === "language-toggle" && (
                   <FormControlLabel
+                    sx={{ margin: "0px" }}
                     control={
                       <Switch
                         checked={i18n.language === "ar"}
@@ -363,6 +366,14 @@ export default function WeatherSidebar() {
         onClose={toggleDrawer(false)}
         anchor="right"
         dir={i18n.language === "ar" ? "rtl" : "ltr"}
+        sx={{
+          "& .MuiPaper-root": {
+            backgroundColor: theme.palette.primary.main,
+            backgroundImage: "none",
+            height: "100vh",
+            maxHeight: "100vh",
+          },
+        }}
       >
         {DrawerList}
       </Drawer>
